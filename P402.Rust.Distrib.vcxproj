@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribute|Win32">
+      <Configuration>Distribute</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribute|x64">
+      <Configuration>Distribute</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Reseller|Win32">
+      <Configuration>Reseller</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Reseller|x64">
+      <Configuration>Reseller</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6DC962BC-28B3-48B7-A611-4890D13AD3B6}</ProjectGuid>
+    <RootNamespace>P402_Rust</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform).$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform).$(Configuration).Intermediates\</IntDir>
+    <IncludePath>$(ProjectDir)Cryptography\Socket;$(ProjectDir)Menu\ImGui;$(ProjectDir)Menu\OpenGUI;$(ProjectDir)Cheat\Header;$(ProjectDir)Menu\DirectGUI;$(ProjectDir)Cheat;$(ProjectDir)Include;$(ProjectDir);$(ProjectDir)Cryptography;$(ProjectDir)Bypass;$(ProjectDir)Internal\Header;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform).$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform).$(Configuration).Intermediates\</IntDir>
+    <IncludePath>$(ProjectDir)Cryptography\Socket;$(ProjectDir)Menu\ImGui;$(ProjectDir)Menu\OpenGUI;$(ProjectDir)Cheat\Header;$(ProjectDir)Menu\DirectGUI;$(ProjectDir)Cheat;$(ProjectDir)Include;$(ProjectDir);$(ProjectDir)Cryptography;$(ProjectDir)Bypass;$(ProjectDir)Internal\Header;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform).$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform).$(Configuration).Intermediates\</IntDir>
+    <IncludePath>$(ProjectDir)Cryptography\Socket;$(ProjectDir)Menu\ImGui;$(ProjectDir)Menu\OpenGUI;$(ProjectDir)Cheat\Header;$(ProjectDir)Menu\DirectGUI;$(ProjectDir)Cheat;$(ProjectDir)Include;$(ProjectDir);$(ProjectDir)Cryptography;$(ProjectDir)Bypass;$(ProjectDir)Internal\Header;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform).$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform).$(Configuration).Intermediates\</IntDir>
+    <IncludePath>$(ProjectDir)Cryptography\Socket;$(ProjectDir)Menu\ImGui;$(ProjectDir)Menu\OpenGUI;$(ProjectDir)Cheat\Header;$(ProjectDir)Menu\DirectGUI;$(ProjectDir)Cheat;$(ProjectDir)Include;$(ProjectDir);$(ProjectDir)Cryptography;$(ProjectDir)Bypass;$(ProjectDir)Internal\Header;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)$(Platform).$(Configuration).Intermediates\</IntDir>
+    <OutDir>$(SolutionDir)$(Platform).$(Configuration)\</OutDir>
+    <IncludePath>$(ProjectDir)Cryptography\Socket;$(ProjectDir)Menu\ImGui;$(ProjectDir)Menu\OpenGUI;$(ProjectDir)Cheat\Header;$(ProjectDir)Menu\DirectGUI;$(ProjectDir)Cheat;$(ProjectDir)Include;$(ProjectDir);$(ProjectDir)Cryptography;$(ProjectDir)Bypass;$(ProjectDir)Internal\Header;$(ProjectDir)..\P402.Crypto;$(IncludePath);$(ProjectDir)..\P402.Crypto\Sodium</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)$(Platform).$(Configuration).Intermediates\</IntDir>
+    <OutDir>$(SolutionDir)$(Platform).$(Configuration)\</OutDir>
+    <IncludePath>$(ProjectDir)Cryptography\Socket;$(ProjectDir)Menu\ImGui;$(ProjectDir)Menu\OpenGUI;$(ProjectDir)Cheat\Header;$(ProjectDir)Menu\DirectGUI;$(ProjectDir)Cheat;$(ProjectDir)Include;$(ProjectDir);$(ProjectDir)Cryptography;$(ProjectDir)Bypass\Header;$(ProjectDir)Internal\Header;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)$(Platform).$(Configuration).Intermediates\</IntDir>
+    <OutDir>$(SolutionDir)$(Platform).$(Configuration)\</OutDir>
+    <IncludePath>$(ProjectDir)Cryptography\Socket;$(ProjectDir)Menu\ImGui;$(ProjectDir)Menu\OpenGUI;$(ProjectDir)Cheat\Header;$(ProjectDir)Menu\DirectGUI;$(ProjectDir)Cheat;$(ProjectDir)Include;$(ProjectDir);$(ProjectDir)Cryptography;$(ProjectDir)Bypass\Header;$(ProjectDir)Internal\Header;$(ProjectDir)..\P402.Crypto;$(IncludePath);$(ProjectDir)..\P402.Crypto\Sodium</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)$(Platform).$(Configuration).Intermediates\</IntDir>
+    <OutDir>$(SolutionDir)$(Platform).$(Configuration)\</OutDir>
+    <IncludePath>$(ProjectDir)Cryptography\Socket;$(ProjectDir)Menu\ImGui;$(ProjectDir)Menu\OpenGUI;$(ProjectDir)Cheat\Header;$(ProjectDir)Menu\DirectGUI;$(ProjectDir)Cheat;$(ProjectDir)Include;$(ProjectDir);$(ProjectDir)Cryptography;$(ProjectDir)Bypass\Header;$(ProjectDir)Internal\Header;$(ProjectDir)..\P402.Crypto\;$(IncludePath);$(ProjectDir)..\P402.Crypto\Sodium</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;P402DLLTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>32libsodium.lib;%(AdditionalDependencies);Version.lib</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;P402DLLTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>32libsodium.lib;%(AdditionalDependencies);Version.lib</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>P402DISTRIBUTE;WIN32;NDEBUG;P402DLLTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>32libsodium.lib;%(AdditionalDependencies);Version.lib</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>P402DISTRIBUTE;WIN32;NDEBUG;P402DLLTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>32libsodium.lib;%(AdditionalDependencies);Version.lib</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;P402DLLTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);JM_XORSTR_DISABLE_AVX_INTRINSICS</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>64libsodium.lib;%(AdditionalDependencies);Version.lib</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;P402DLLTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);JM_XORSTR_DISABLE_AVX_INTRINSICS</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>64libsodium.lib;%(AdditionalDependencies);Version.lib</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>P402DISTRIBUTE;NDEBUG;P402DLLTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;P402DISTRIBUTE;%(PreprocessorDefinitions);JM_XORSTR_DISABLE_AVX_INTRINSICS</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>64libsodium.lib;%(AdditionalDependencies);Version.lib</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>P402DISTRIBUTE;NDEBUG;P402DLLTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);JM_XORSTR_DISABLE_AVX_INTRINSICS;_RESELLER</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>64libsodium.lib;%(AdditionalDependencies);Version.lib</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\P402.Cryptograhpy\Auth.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\hwid.hpp" />
+    <ClInclude Include="..\P402.Cryptograhpy\Socket\XEvent.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Socket\XSocket.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\sodium.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\core.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_aead_aes256gcm.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_aead_chacha20poly1305.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_aead_xchacha20poly1305.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_auth.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_auth_hmacsha256.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_auth_hmacsha512.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_auth_hmacsha512256.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_box.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_box_curve25519xchacha20poly1305.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_box_curve25519xsalsa20poly1305.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_ed25519.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_hchacha20.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_hsalsa20.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_ristretto255.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_salsa20.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_salsa2012.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_salsa208.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_generichash.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_generichash_blake2b.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_hash.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_hash_sha256.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_hash_sha512.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_kdf.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_kdf_blake2b.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_kx.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_onetimeauth.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_onetimeauth_poly1305.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_pwhash.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_pwhash_argon2i.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_pwhash_argon2id.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_pwhash_scryptsalsa208sha256.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_scalarmult.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_scalarmult_curve25519.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_scalarmult_ed25519.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_scalarmult_ristretto255.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_secretbox.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_secretbox_xchacha20poly1305.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_secretbox_xsalsa20poly1305.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_secretstream_xchacha20poly1305.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_shorthash.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_shorthash_siphash24.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_sign.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_sign_ed25519.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_sign_edwards25519sha512batch.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_chacha20.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_salsa20.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_salsa2012.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_salsa208.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_xchacha20.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_xsalsa20.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_verify_16.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_verify_32.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_verify_64.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\export.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\picosha2.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\randombytes.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\randombytes_internal_random.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\randombytes_sysrandom.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\runtime.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\utils.h" />
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\version.h" />
+    <ClInclude Include="Bypass\Header\AAnticheat.h" />
+    <ClInclude Include="Cheat\Header\Esp.h" />
+    <ClInclude Include="Cheat\Header\hk_Keyboard.h" />
+    <ClInclude Include="Cheat\Header\hk_Present.h" />
+    <ClInclude Include="Cheat\Header\RustInternal.h" />
+    <ClInclude Include="Include\Global.h" />
+    <ClInclude Include="Include\pch.h" />
+    <ClInclude Include="Internal\Header\Detour.h" />
+    <ClInclude Include="Internal\Header\GetModule.h" />
+    <ClInclude Include="Internal\Header\Imports.h" />
+    <ClInclude Include="Internal\Header\Scan.h" />
+    <ClInclude Include="Internal\Header\Vmt.h" />
+    <ClInclude Include="Menu\DirectGUI\imgui_impl_dx10.h" />
+    <ClInclude Include="Menu\DirectGUI\imgui_impl_dx11.h" />
+    <ClInclude Include="Menu\DirectGUI\imgui_impl_dx12.h" />
+    <ClInclude Include="Menu\DirectGUI\imgui_impl_dx9.h" />
+    <ClInclude Include="Menu\ImGui\imconfig.h" />
+    <ClInclude Include="Menu\ImGui\imgui.h" />
+    <ClInclude Include="Menu\ImGui\imgui_internal.h" />
+    <ClInclude Include="Menu\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Menu\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Menu\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Menu\ImGui\misc\cpp\imgui_stdlib.h" />
+    <ClInclude Include="Menu\ImGui\misc\single_file\imgui_single_file.h" />
+    <ClInclude Include="Menu\Menu.h" />
+    <ClInclude Include="Protector\json.hpp" />
+    <ClInclude Include="Protector\nt_.hpp" />
+    <ClInclude Include="Protector\Processes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\P402.Cryptograhpy\Auth.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\P402.Cryptograhpy\hwid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\P402.Cryptograhpy\Socket\XEvent.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\P402.Cryptograhpy\Socket\XSocket.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Bypass\AAnticheat.cpp" />
+    <ClCompile Include="Cheat\Esp.cpp" />
+    <ClCompile Include="Cheat\hk_Keyboard.cpp" />
+    <ClCompile Include="Cheat\hk_Present.cpp" />
+    <ClCompile Include="Cheat\RustInternal.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Internal\Detour.cpp" />
+    <ClCompile Include="Internal\GetModule.cpp" />
+    <ClCompile Include="Internal\Imports.cpp" />
+    <ClCompile Include="Internal\Scan.cpp" />
+    <ClCompile Include="Internal\Vmt.cpp" />
+    <ClCompile Include="Menu\DirectGUI\imgui_impl_dx10.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\DirectGUI\imgui_impl_dx11.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\DirectGUI\imgui_impl_dx12.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\DirectGUI\imgui_impl_dx9.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\misc\cpp\imgui_stdlib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\misc\fonts\binary_to_compressed_c.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Menu\Menu.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Protector\Processes.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Reseller|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libraries\32libsodium.lib" />
+    <Library Include="Libraries\64libsodium.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

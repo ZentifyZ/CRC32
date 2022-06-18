@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P402.Rust", "P402.Rust.vcxproj", "{6BB96DD3-095C-4414-A90C-EE1A03677809}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Distribute|x64 = Distribute|x64
+		Reseller|x64 = Reseller|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BB96DD3-095C-4414-A90C-EE1A03677809}.Debug|x64.ActiveCfg = Release|x64
+		{6BB96DD3-095C-4414-A90C-EE1A03677809}.Debug|x64.Build.0 = Release|x64
+		{6BB96DD3-095C-4414-A90C-EE1A03677809}.Distribute|x64.ActiveCfg = Distribute|x64
+		{6BB96DD3-095C-4414-A90C-EE1A03677809}.Distribute|x64.Build.0 = Distribute|x64
+		{6BB96DD3-095C-4414-A90C-EE1A03677809}.Reseller|x64.ActiveCfg = Reseller|x64
+		{6BB96DD3-095C-4414-A90C-EE1A03677809}.Reseller|x64.Build.0 = Reseller|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E9FBAD3-1382-447E-9038-DA82C5C85DA9}
+	EndGlobalSection
+EndGlobal

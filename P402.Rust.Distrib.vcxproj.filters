@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Hidden">
+      <UniqueIdentifier>{031dcca7-3422-4a2c-b568-014650911e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat">
+      <UniqueIdentifier>{7102f032-604e-45dc-b4b0-43abe983dd42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Internal">
+      <UniqueIdentifier>{cc674c4b-5810-42f1-89dd-788a9c97ed3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{cabd138b-03b8-479b-aac0-7f65bb81d7d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\ImGui">
+      <UniqueIdentifier>{3a5f5a13-11d1-4c59-a800-7a5763601e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\ImGui\misc">
+      <UniqueIdentifier>{740566b9-5285-495a-8e04-0ae6b5dc0c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\DirectGUI">
+      <UniqueIdentifier>{1005a1c5-feee-4368-ae27-ebe7d1eb7e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\OpenGUI">
+      <UniqueIdentifier>{79b92846-ef87-45b6-bb75-bca1169f841f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Internal\Header">
+      <UniqueIdentifier>{27422a0d-f38f-4988-b8b4-7bb2139ecc89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bypass">
+      <UniqueIdentifier>{80bbb690-91b6-43b7-a341-926d147cb30e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bypass\Header">
+      <UniqueIdentifier>{d56aea97-a603-4443-a877-768ac2092cc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\Header">
+      <UniqueIdentifier>{888d2837-5e5c-4dee-8096-c5e79cdb9b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{9a4ef405-954e-4f33-9cff-cba7b2a0e3d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protector">
+      <UniqueIdentifier>{ea8cbe34-8063-484e-ae4c-b724a3b117ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protector\Header">
+      <UniqueIdentifier>{03f176b2-89b3-4fba-9057-20fa688db4a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat\SDK">
+      <UniqueIdentifier>{7c6518e4-f8bb-4004-be18-45d1e1e1c9b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cryptography">
+      <UniqueIdentifier>{051535b2-2973-4b72-b3d9-de8b243b3a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cryptography\Header">
+      <UniqueIdentifier>{78d39070-8efd-4052-bc7d-9079699c4d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cryptography\Socket">
+      <UniqueIdentifier>{032ef66f-4b07-45c7-b6f0-91a184648bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cryptography\Sodium">
+      <UniqueIdentifier>{846a3445-875d-4f85-ac4d-cca0e653d676}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Menu\ImGui\imgui_internal.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imstb_rectpack.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imstb_textedit.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imstb_truetype.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imconfig.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\imgui.h">
+      <Filter>Menu\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\misc\single_file\imgui_single_file.h">
+      <Filter>Menu\ImGui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ImGui\misc\cpp\imgui_stdlib.h">
+      <Filter>Menu\ImGui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectGUI\imgui_impl_dx10.h">
+      <Filter>Menu\DirectGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectGUI\imgui_impl_dx11.h">
+      <Filter>Menu\DirectGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectGUI\imgui_impl_dx12.h">
+      <Filter>Menu\DirectGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\DirectGUI\imgui_impl_dx9.h">
+      <Filter>Menu\DirectGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pch.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Internal\Header\Scan.h">
+      <Filter>Internal\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Internal\Header\Vmt.h">
+      <Filter>Internal\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Internal\Header\GetModule.h">
+      <Filter>Internal\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Global.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Header\Esp.h">
+      <Filter>Cheat\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Header\hk_Keyboard.h">
+      <Filter>Cheat\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Header\hk_Present.h">
+      <Filter>Cheat\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Protector\Processes.h">
+      <Filter>Protector\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Protector\json.hpp">
+      <Filter>Protector</Filter>
+    </ClInclude>
+    <ClInclude Include="Protector\nt_.hpp">
+      <Filter>Protector\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Bypass\Header\AAnticheat.h">
+      <Filter>Bypass\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Internal\Header\Imports.h">
+      <Filter>Internal\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Internal\Header\Detour.h">
+      <Filter>Internal\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Header\RustInternal.h">
+      <Filter>Cheat\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\hwid.hpp">
+      <Filter>Cryptography\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\sodium.h">
+      <Filter>Cryptography\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Auth.h">
+      <Filter>Cryptography\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_auth.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_auth_hmacsha256.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_auth_hmacsha512.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_auth_hmacsha512256.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_box.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_box_curve25519xchacha20poly1305.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_box_curve25519xsalsa20poly1305.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_ed25519.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_hchacha20.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_hsalsa20.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_ristretto255.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_salsa20.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_salsa208.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_core_salsa2012.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_generichash.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_generichash_blake2b.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_hash.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_hash_sha256.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_hash_sha512.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_kdf.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_kdf_blake2b.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_kx.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_onetimeauth.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_onetimeauth_poly1305.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_pwhash.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_pwhash_argon2i.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_pwhash_argon2id.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_pwhash_scryptsalsa208sha256.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_scalarmult.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_scalarmult_curve25519.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_scalarmult_ed25519.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_scalarmult_ristretto255.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_secretbox.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_secretbox_xchacha20poly1305.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_secretbox_xsalsa20poly1305.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_secretstream_xchacha20poly1305.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_shorthash.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_shorthash_siphash24.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_sign.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_sign_ed25519.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_sign_edwards25519sha512batch.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_chacha20.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_salsa20.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_salsa208.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_salsa2012.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_xchacha20.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_stream_xsalsa20.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_verify_16.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_verify_32.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_verify_64.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\export.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\picosha2.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\randombytes.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\randombytes_internal_random.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\randombytes_sysrandom.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\runtime.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\utils.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\version.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\core.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_aead_aes256gcm.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_aead_chacha20poly1305.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Sodium\crypto_aead_xchacha20poly1305.h">
+      <Filter>Cryptography\Sodium</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Socket\XEvent.h">
+      <Filter>Cryptography\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\P402.Cryptograhpy\Socket\XSocket.h">
+      <Filter>Cryptography\Socket</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Hidden</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_draw.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_widgets.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\imgui_demo.cpp">
+      <Filter>Menu\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\misc\cpp\imgui_stdlib.cpp">
+      <Filter>Menu\ImGui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ImGui\misc\fonts\binary_to_compressed_c.cpp">
+      <Filter>Menu\ImGui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\DirectGUI\imgui_impl_dx11.cpp">
+      <Filter>Menu\DirectGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\DirectGUI\imgui_impl_dx12.cpp">
+      <Filter>Menu\DirectGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\DirectGUI\imgui_impl_dx9.cpp">
+      <Filter>Menu\DirectGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\DirectGUI\imgui_impl_dx10.cpp">
+      <Filter>Menu\DirectGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Internal\GetModule.cpp">
+      <Filter>Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Internal\Scan.cpp">
+      <Filter>Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Internal\Vmt.cpp">
+      <Filter>Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\hk_Keyboard.cpp">
+      <Filter>Cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\hk_Present.cpp">
+      <Filter>Cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\Esp.cpp">
+      <Filter>Cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Protector\Processes.cpp">
+      <Filter>Protector</Filter>
+    </ClCompile>
+    <ClCompile Include="Bypass\AAnticheat.cpp">
+      <Filter>Bypass</Filter>
+    </ClCompile>
+    <ClCompile Include="Internal\Imports.cpp">
+      <Filter>Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Internal\Detour.cpp">
+      <Filter>Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat\RustInternal.cpp">
+      <Filter>Cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\P402.Cryptograhpy\Socket\XSocket.cpp">
+      <Filter>Cryptography\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\P402.Cryptograhpy\Socket\XEvent.cpp">
+      <Filter>Cryptography\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\P402.Cryptograhpy\hwid.cpp">
+      <Filter>Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="..\P402.Cryptograhpy\Auth.cpp">
+      <Filter>Cryptography</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libraries\64libsodium.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="Libraries\32libsodium.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
